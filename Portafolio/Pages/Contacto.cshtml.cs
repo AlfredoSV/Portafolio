@@ -12,5 +12,15 @@ namespace Portafolio.Pages
         public void OnGet()
         {
         }
+
+        public void OnPost()
+        {
+
+        }
+
+        public void OnGetDescargarCv()
+        {
+
+        }
     }
 }

@@ -88,3 +88,21 @@ body {
     color:#1b6ec2;
     width:10px;
 }
+
+.input-nombre, .textarea-asunto {
+    border-color: none;
+    outline: none;
+    padding: 4px;
+    width: 100%;
+    border:#ccc solid .2px;
+}
+
+.input-submit {
+    padding:6px;
+    background-color:#4d8feb;
+    color:white;
+    width:14%;
+    border:none;
+    border-radius:7px;
+    
+}

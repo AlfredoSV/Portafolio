@@ -3,10 +3,30 @@
 @{
 }
 
-<div>
-    <form>
-        <div></div>
-        <div></div>
-        <div></div>
-    </form>
-</div>
+<form method="post" class="mb-5 mr-5 ml-5 mt-2 pr-5 pl-5 pb-5 pt-2">
+
+    <div class="row m-4">
+        <div class="col">
+            <h1 class="mb-3">Contacto</h1>
+            <input class="input-nombre" type="text" placeholder="Nombre" />
+        </div>
+
+    </div>
+    <div class="row m-4">
+        <div class="col">
+            <textarea class="textarea-asunto" cols="40" rows="6" placeholder="Asunto"></textarea>
+        </div>
+    </div>
+    <div class="row m-4">
+        <div class="col">
+            <input class="input-submit" type="submit" />
+        </div>
+    </div>
+
+    <div class="row m-4">
+        <div class="col">
+            <a class="text-black-50" asp-page-handler="DescargarCv">Descargar CV</a>
+        </div>
+    </div>
+
+</form>
