@@ -1,4 +1,7 @@
-﻿namespace Portafolio.Persistencia
+﻿using System;
+using System.Data.SqlClient;
+
+namespace Portafolio.Persistencia
 {
     public class DataContacto
     {
@@ -9,8 +12,27 @@
             _cadConexion = CadConexion;
         }
 
-        public void InsertContacto()
+        public void InsertContacto(DataContacto contacto)
         {
+            SqlCommand sqlCommand = null;
+            var sql = "";
+            try
+            {
+                using (var conexion = new SqlConnection(_cadConexion))
+                {
+
+                    sqlCommand = new SqlCommand(sql, conexion);
+                    sqlCommand.Parameters.AddWithValue("", "");
+
+                }
+
+            }
+            catch (Exception exepcion)
+            {
+
+                throw exepcion;
+            }
+
 
         }
     }
